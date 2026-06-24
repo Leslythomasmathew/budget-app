@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useLoaderData, Link, Form } from "react-router-dom";
 import { toast } from "react-toastify";
-import { Edit2, Check, X, PiggyBank, Wallet, Activity, AlertTriangle } from "lucide-react";
+import { Edit2, Check, X, PiggyBank, Activity, AlertTriangle } from "lucide-react";
 import { fetchData, createBudget, createExpense, deleteItem, waits, formatCurrency, formatPercentage } from "../helpers";
 
 // Components
@@ -124,7 +124,6 @@ const Dashboard = () => {
         <div className="card" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
             <span style={{ fontSize: "0.95rem", color: "var(--color-text-secondary)", fontWeight: 500 }}>Total Funds Available</span>
-            <Wallet size={20} style={{ color: "var(--primary-accent)", marginLeft: "auto" }} />
           </div>
           <div style={{ margin: "1rem 0" }}>
             {isEditingFunds ? (

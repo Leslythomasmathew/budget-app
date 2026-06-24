@@ -1,13 +1,12 @@
 import React from "react";
 import { Form, NavLink } from "react-router-dom";
-import { Wallet, Trash2 } from "lucide-react";
+import { Trash2 } from "lucide-react";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="nav-container">
         <NavLink to="/" className="logo">
-          <Wallet size={28} />
           <span>Your Expense Manager</span>
         </NavLink>
         <Form
