@@ -123,7 +123,7 @@ const Dashboard = () => {
         {/* Total Funds Card */}
         <div className="card" style={{ display: "flex", flexDirection: "column", justifyContent: "space-between" }}>
           <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
-            <span style={{ fontSize: "0.95rem", color: "var(--color-text-secondary)", fontWeight: 500 }}>Total Funds Available</span>
+            <span style={{ fontSize: "0.95rem", color: "var(--color-text-secondary)", fontWeight: 500 }}>Type your budget here</span>
           </div>
           <div style={{ margin: "1rem 0" }}>
             {isEditingFunds ? (
