@@ -50,7 +50,7 @@ const router = createBrowserRouter([
     ],
   },
 ], {
-  basename: "/budget-app",
+  basename: import.meta.env.BASE_URL,
 });
 
 function App() {
