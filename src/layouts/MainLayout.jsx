@@ -1,20 +1,16 @@
 import React from "react";
-import { Outlet, useLoaderData } from "react-router-dom";
-import { fetchData } from "../helpers";
+import { Outlet } from "react-router-dom";
 import Navbar from "../components/Navbar";
 
-// Loader to fetch user details for the main layout
+// Main layout loader (kept for routing compatibility)
 export function mainLoader() {
-  const userName = fetchData("userName");
-  return { userName };
+  return null;
 }
 
 const MainLayout = () => {
-  const { userName } = useLoaderData();
-
   return (
     <div className="layout">
-      <Navbar userName={userName} />
+      <Navbar />
       <main>
         <Outlet />
       </main>

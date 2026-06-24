@@ -2,7 +2,7 @@ import { redirect } from "react-router-dom";
 import { deleteItem } from "../helpers";
 import { toast } from "react-toastify";
 
-// Logout/Delete User action
+// Logout/Clear all data action
 export async function logoutAction() {
   // Delete storage data
   deleteItem({ key: "userName" });
@@ -10,8 +10,8 @@ export async function logoutAction() {
   deleteItem({ key: "expenses" });
   deleteItem({ key: "totalFunds" });
   
-  toast.success("Account deleted successfully!");
+  toast.success("All budget data cleared!");
   
-  // Redirect to Dashboard (which will show the Intro welcome page)
+  // Redirect to Dashboard
   return redirect("/");
 }
