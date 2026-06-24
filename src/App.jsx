@@ -49,7 +49,9 @@ const router = createBrowserRouter([
       },
     ],
   },
-]);
+], {
+  basename: "/budget-app",
+});
 
 function App() {
   return (
